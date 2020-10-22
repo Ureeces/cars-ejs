@@ -7,10 +7,10 @@
 
   <body>
     <h1>Car List</h1>
-    
+    <button><a href="/cars/add-car">Add A Word</a></button>
     <% if(carsList.length) { carsList.forEach((car) => { %>
         <p>
-          <%= car.name %> 
+          Name: <%= car.name %>, Type: <%= car.type %>, (<%=car.year%>) 
         </p>
     <% })} else {%>
       <h1>No cars found.</h1>
