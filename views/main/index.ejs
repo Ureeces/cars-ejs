@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cars</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <h1>Car List</h1>
+    
+    <% if(carsList.length) { carsList.forEach((car) => { %>
+        <p>
+          <%= car.name %> 
+        </p>
+    <% })} else {%>
+      <h1>No cars found.</h1>
+    <% } %> 
+  </body>
+</html>
